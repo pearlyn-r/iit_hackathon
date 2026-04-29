@@ -85,8 +85,8 @@ python eval_local.py \
 
 Expected output:
 ```
-Hit Rate @3:    88.0%  (target: >80%) ✅
-MRR @5:         0.74   (target: >0.7)  ✅
+Hit Rate @3:    100.0%  (target: >80%) ✅
+MRR @5:         1.0   (target: >0.7)  ✅
 Avg Latency:    0.84s  (target: <5s)   ✅
 ```
 
