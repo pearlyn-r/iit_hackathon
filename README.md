@@ -181,4 +181,4 @@ Default is **fast mode** to safely stay under 5s on all hardware.
 
 ## Team
 
-[Your team details here]
+[Magnum Opus] 
