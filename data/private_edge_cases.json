@@ -1,0 +1,82 @@
+[
+  {
+    "id": "EDGE-01",
+    "query": "43 grade ordinary portland cement for general construction and structural concrete",
+    "expected_standards": ["IS 8112: 1989"]
+  },
+  {
+    "id": "EDGE-02",
+    "query": "53 grade ordinary portland cement for prestressed concrete members",
+    "expected_standards": ["IS 12269: 1987"]
+  },
+  {
+    "id": "EDGE-03",
+    "query": "rapid hardening portland cement for emergency pavement and road repair work",
+    "expected_standards": ["IS 8041: 1990"]
+  },
+  {
+    "id": "EDGE-04",
+    "query": "white portland cement for decorative and architectural finishes",
+    "expected_standards": ["IS 8042: 1989"]
+  },
+  {
+    "id": "EDGE-05",
+    "query": "manufacture requirements for portland slag cement used in marine and aggressive environments",
+    "expected_standards": ["IS 455: 1989"]
+  },
+  {
+    "id": "EDGE-06",
+    "query": "portland pozzolana cement fly ash based for general construction",
+    "expected_standards": ["IS 1489 (Part 1): 1991"]
+  },
+  {
+    "id": "EDGE-07",
+    "query": "portland pozzolana cement calcined clay based for plant setup and compliance",
+    "expected_standards": ["IS 1489 (Part 2): 1991"]
+  },
+  {
+    "id": "EDGE-08",
+    "query": "corrugated and semi-corrugated asbestos cement sheets for roofing and cladding",
+    "expected_standards": ["IS 459: 1992"]
+  },
+  {
+    "id": "EDGE-09",
+    "query": "products in fibre reinforced cement long corrugated sheets and fittings for roofing and cladding",
+    "expected_standards": ["IS 14871: 2000"]
+  },
+  {
+    "id": "EDGE-10",
+    "query": "asbestos cement pressure pipes light duty for potable water supply",
+    "expected_standards": ["IS 9627: 1980"]
+  },
+  {
+    "id": "EDGE-11",
+    "query": "cast iron specials for asbestos cement pressure pipes for water gas and sewage systems",
+    "expected_standards": ["IS 5531: 1988"]
+  },
+  {
+    "id": "EDGE-12",
+    "query": "autoclaved cellular aerated concrete masonry units for wall construction",
+    "expected_standards": ["IS 2185 (Part 3): 1984"]
+  },
+  {
+    "id": "EDGE-13",
+    "query": "hollow and solid concrete blocks not lightweight for standard masonry walls",
+    "expected_standards": ["IS 2185 (Part 1): 1979"]
+  },
+  {
+    "id": "EDGE-14",
+    "query": "hollow and solid lightweight concrete masonry blocks with dimensional and physical requirements",
+    "expected_standards": ["IS 2185 (Part 2): 1983"]
+  },
+  {
+    "id": "EDGE-15",
+    "query": "TMT Fe500 high strength deformed steel bars for RCC reinforcement",
+    "expected_standards": ["IS 1786: 1985"]
+  },
+  {
+    "id": "EDGE-16",
+    "query": "supersulphated cement for marine works and aggressive water conditions",
+    "expected_standards": ["IS 6909: 1990"]
+  }
+]

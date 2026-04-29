@@ -1,0 +1,22 @@
+{
+  "model_name": "BAAI/bge-large-en-v1.5",
+  "embedding_dim": 1024,
+  "total_chunks": 721,
+  "total_standards": 549,
+  "material_types": {
+    "blended_cement": 11,
+    "concrete_product": 27,
+    "asbestos_cement": 23,
+    "fibre_cement": 29,
+    "general": 563,
+    "aggregate": 11,
+    "portland_cement_opc": 4,
+    "rapid_hardening_cement": 1,
+    "white_cement": 2,
+    "brick_masonry": 5,
+    "structural_steel": 29,
+    "roofing_sheet": 5,
+    "pipe": 9,
+    "wire": 2
+  }
+}

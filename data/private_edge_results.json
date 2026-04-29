@@ -1,0 +1,898 @@
+[
+  {
+    "id": "EDGE-01",
+    "retrieved_standards": [
+      "IS 8112: 1989",
+      "IS 12269: 1987",
+      "IS 269: 1989",
+      "IS 8043: 1991",
+      "IS 3466: 1988"
+    ],
+    "latency_seconds": 0.5045,
+    "details": [
+      {
+        "standard_id": "IS 8112: 1989",
+        "title": "43 GRADE ORDINARY PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.98,
+        "rationale": "IS 8112 : 1989 43 GRADE ORDINARY PORTLAND CEMENT\n(First Revision)\n1. (first revision)\nFor detailed information, refer to IS 8112:1989 Specification for 43 Grade ordinary portland\ncement (first revision)."
+      },
+      {
+        "standard_id": "IS 12269: 1987",
+        "title": "53 GRADE ORDINARY PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1987,
+        "confidence": 0.925,
+        "rationale": "IS 12269 : 1987 53 GRADE ORDINARY PORTLAND CEMENT\n1. + 43 Grade ordinary portland cement (first revision)."
+      },
+      {
+        "standard_id": "IS 269: 1989",
+        "title": "ORDINARY PORTLAND CEMENT, 33 GRADE",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.87,
+        "rationale": "IS 269 : 1989 ORDINARY PORTLAND CEMENT, 33 GRADE\n(Fourth Revision)\n1. following requirements:\nTABLE 1 CHEMICAL REQUIREMENTS FOR 33 GRADE ORDINARY PORTLAND CEMENT\nSl."
+      },
+      {
+        "standard_id": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT 1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.815,
+        "rationale": "Physical Requirements\nrequirements of hydrophobic Portland cement. This cement\nis obtained by intergrinding 33 grade ordinary Portland cement\n3.2Soundness and Setting Time \u2014 Shall be as laid down\nclinker with certain hydrophobic agents which will impart to\nthe cement a water repelling property."
+      },
+      {
+        "standard_id": "IS 3466: 1988",
+        "title": "MASONRY CEMENT",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.76,
+        "rationale": "IS 3466 : 1988 MASONRY CEMENT\n(Second Revision)\n1. Delivery \u2014 Packed in specified bags of 50 kg or 25\nfor use in structural concrete, for flooring and foundation kg net or in bulk with tolerance as given in the standard."
+      }
+    ],
+    "expected_standards": [
+      "IS 8112: 1989"
+    ]
+  },
+  {
+    "id": "EDGE-02",
+    "retrieved_standards": [
+      "IS 12269: 1987",
+      "IS 8112: 1989",
+      "IS 269: 1989",
+      "IS 8043: 1991",
+      "IS 6523: 1983"
+    ],
+    "latency_seconds": 0.38,
+    "details": [
+      {
+        "standard_id": "IS 12269: 1987",
+        "title": "53 GRADE ORDINARY PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1987,
+        "confidence": 0.98,
+        "rationale": "IS 12269 : 1987 53 GRADE ORDINARY PORTLAND CEMENT\n1. + 43 Grade ordinary portland cement (first revision)."
+      },
+      {
+        "standard_id": "IS 8112: 1989",
+        "title": "43 GRADE ORDINARY PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.925,
+        "rationale": "IS 8112 : 1989 43 GRADE ORDINARY PORTLAND CEMENT\n(First Revision)\n1. (first revision)\nFor detailed information, refer to IS 8112:1989 Specification for 43 Grade ordinary portland\ncement (first revision)."
+      },
+      {
+        "standard_id": "IS 269: 1989",
+        "title": "ORDINARY PORTLAND CEMENT, 33 GRADE",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.87,
+        "rationale": "IS 269 : 1989 ORDINARY PORTLAND CEMENT, 33 GRADE\n(Fourth Revision)\n1. following requirements:\nTABLE 1 CHEMICAL REQUIREMENTS FOR 33 GRADE ORDINARY PORTLAND CEMENT\nSl."
+      },
+      {
+        "standard_id": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT 1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.815,
+        "rationale": "Physical Requirements\nrequirements of hydrophobic Portland cement. This cement\nis obtained by intergrinding 33 grade ordinary Portland cement\n3.2Soundness and Setting Time \u2014 Shall be as laid down\nclinker with certain hydrophobic agents which will impart to\nthe cement a water repelling property."
+      },
+      {
+        "standard_id": "IS 6523: 1983",
+        "title": "PRECAST REINFORCED CONCRETE DOOR AND WINDOW FRAMES",
+        "category": "Cement",
+        "year": 1983,
+        "confidence": 0.76,
+        "rationale": "3.1.1 Cement \u2014 Ordinary Portland cement or Portland\n2. Overall sizes (width and Portland cement."
+      }
+    ],
+    "expected_standards": [
+      "IS 12269: 1987"
+    ]
+  },
+  {
+    "id": "EDGE-03",
+    "retrieved_standards": [
+      "IS 8041: 1990",
+      "IS 8043: 1991",
+      "IS 269: 1989",
+      "IS 12330: 1988",
+      "IS 1838 (Part 1): 1983"
+    ],
+    "latency_seconds": 0.3871,
+    "details": [
+      {
+        "standard_id": "IS 8041: 1990",
+        "title": "RAPID HARDENING PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1990,
+        "confidence": 0.98,
+        "rationale": "IS 8041 : 1990 RAPID HARDENING PORTLAND CEMENT\n(Second Revision)\n1. 1.1 Manufacture and chemical and physical\nrequirements of rapid hardening Portland cement."
+      },
+      {
+        "standard_id": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT 1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.925,
+        "rationale": "IS 8043 : 1991 HYDROPHOBIC PORTLAND CEMENT\n(Second Revision)\n1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements\nrequirements of hydrophobic Portland cement."
+      },
+      {
+        "standard_id": "IS 269: 1989",
+        "title": "1989* except that compressive strength of mortar * Ordinary portland cement 33 Grade",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.87,
+        "rationale": "IS 269: 1989* except that compressive strength of mortar\n* Ordinary portland cement 33 Grade (fourth revision)\nTABLE 1 CHEMICAL REQUIREMENTS FOR WHITE PORTLAND CEMENT\nSl No. (first revision)\nFor detailed information, refer to IS 8042:1989 Specification for white Portland cement\n(second revision)."
+      },
+      {
+        "standard_id": "IS 12330: 1988",
+        "title": "SULPHATE RESISTING PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.815,
+        "rationale": "IS 12330 : 1988 SULPHATE RESISTING PORTLAND CEMENT\n1. TABLE1 CHEMICAL REQUIREMENTS FOR SULPHATE RESISTING\nPORTLAND CEMENT\nSl No."
+      },
+      {
+        "standard_id": "IS 1838 (Part 1): 1983",
+        "title": "(PART 1) : 1983 PREFORMED FILLERS FOR EXPANSION JOINT IN CONCRETE PAVEMENT AND STRUCTURES",
+        "category": "Steel",
+        "year": 1983,
+        "confidence": 0.76,
+        "rationale": "IS 1838 (PART 1) : 1983 PREFORMED FILLERS FOR EXPANSION\nJOINT IN CONCRETE PAVEMENT AND STRUCTURES\n(NON- EXTRUDING AND RESILIENT TYPE)\nPART 1 BITUMEN IMPREGNATED FIBRE\n(First Revision)\n1. For detailed information, refer to IS 1838(Part 1) :1983 Specification for preformed fillers for\nexpansion Joint in concrete pavement and structures (non extruding..."
+      }
+    ],
+    "expected_standards": [
+      "IS 8041: 1990"
+    ]
+  },
+  {
+    "id": "EDGE-04",
+    "retrieved_standards": [
+      "IS 8042: 1989",
+      "IS 269: 1989",
+      "IS 8043: 1991",
+      "IS 2046: 2046",
+      "IS 6523: 1983"
+    ],
+    "latency_seconds": 0.3518,
+    "details": [
+      {
+        "standard_id": "IS 8042: 1989",
+        "title": "WHITE PORTLAND CEMENT 1 Scope prepared from white portland cement shall not be less",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.98,
+        "rationale": "requirements of white Portland cement. Physical Requirements \u2014 Physical require-\nments of white portland cement shall be as laid down in"
+      },
+      {
+        "standard_id": "IS 269: 1989",
+        "title": "1989* except that compressive strength of mortar * Ordinary portland cement 33 Grade",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.925,
+        "rationale": "IS 269: 1989* except that compressive strength of mortar\n* Ordinary portland cement 33 Grade (fourth revision)\nTABLE 1 CHEMICAL REQUIREMENTS FOR WHITE PORTLAND CEMENT\nSl No. (first revision)\nFor detailed information, refer to IS 8042:1989 Specification for white Portland cement\n(second revision)."
+      },
+      {
+        "standard_id": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT 1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.87,
+        "rationale": "IS 8043 : 1991 HYDROPHOBIC PORTLAND CEMENT\n(Second Revision)\n1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements\nrequirements of hydrophobic Portland cement."
+      },
+      {
+        "standard_id": "IS 2046: 2046",
+        "title": "DECORATIVE THERMOSETTING SYNTHETIC RESIN BONDED LAMINATED SHEETS",
+        "category": "Aggregates",
+        "year": 2046,
+        "confidence": 0.815,
+        "rationale": "IS 2046 : 1995 DECORATIVE THERMOSETTING SYNTHETIC\nRESIN BONDED LAMINATED SHEETS\n(Second Revision)\n1. 3.2.2 Reverse side/bonding \u2013 The reverse side of\nsheets having only one decorative surface shall be\n2."
+      },
+      {
+        "standard_id": "IS 6523: 1983",
+        "title": "PRECAST REINFORCED CONCRETE DOOR AND WINDOW FRAMES",
+        "category": "Cement",
+        "year": 1983,
+        "confidence": 0.76,
+        "rationale": "3.1.1 Cement \u2014 Ordinary Portland cement or Portland\n2. Overall sizes (width and Portland cement."
+      }
+    ],
+    "expected_standards": [
+      "IS 8042: 1989"
+    ]
+  },
+  {
+    "id": "EDGE-05",
+    "retrieved_standards": [
+      "IS 6909: 1990",
+      "IS 12089: 1988",
+      "IS 455: 1989",
+      "IS 1489 (Part 1): 1991",
+      "IS 1489 (Part 2): 1991"
+    ],
+    "latency_seconds": 0.428,
+    "details": [
+      {
+        "standard_id": "IS 6909: 1990",
+        "title": "SUPERSULPHATED CEMENT",
+        "category": "Cement",
+        "year": 1990,
+        "confidence": 0.98,
+        "rationale": "Scope\u2014Requirements for composition, Sulphuric anhydride 6 percent, Min\nmanufacture and testing of supersulphated cement\nSulphide sulphur 1.5 percent, Max\n(SSC). Application \u2014Supersulphated cement has been\nsuccessfully used in a variety of aggressive conditions,\nfor example, for marine works, mass concrete jobs to 4.1 Fineness \u2014 It shall have a fine..."
+      },
+      {
+        "standard_id": "IS 12089: 1988",
+        "title": "1988.)* Notes 2. Granulated slag conforming to IS",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.925,
+        "rationale": "\u2020 Granulated slag for manufacture of Portland slag Cement. Specification for portland slag cement\n(fourth revision)."
+      },
+      {
+        "standard_id": "IS 455: 1989",
+        "title": "PORTLAND SLAG CEMENT (Fourth Revison)",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.87,
+        "rationale": "IS 455 : 1989 PORTLAND SLAG CEMENT\n(Fourth Revison)\n1. Scope\u2014 Covers the manufacture and chemical and 3.2 Soundness \u2014 Expansion of unaerated sample\nphysical requirements for Portland slag cement."
+      },
+      {
+        "standard_id": "IS 1489 (Part 1): 1991",
+        "title": "(PART1) : 1991 PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.815,
+        "rationale": "Physical Requirements\nchemical requirements of Portland pozzolana cement\nusing only fly ash pozzolana. TABLE 1 CHEMICAL REQUIREMENTS OF PORTLAND POZZOLANA\nCEMENT\nSI No."
+      },
+      {
+        "standard_id": "IS 1489 (Part 2): 1991",
+        "title": "(PART 2) :1991 PORTLAND POZZOLANA CEMENT PART 2 CALCINED CLAY BASED",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.76,
+        "rationale": "Scope \u2014 Manufacture, Physical and Chemical\nrequriements of Portland- pozzolana cement\n4 Physical requirements\nmanufactured by using calcined clay pozzolana or a\nmixture of calcined clay and fly ash pozzolana. a) At 72\u00b1 1h 16 MPa , Min\n2.2 Portland cement clinker-shall confirm to\nb) At 168 \u00b1 2h 22 MPa , Min"
+      }
+    ],
+    "expected_standards": [
+      "IS 455: 1989"
+    ]
+  },
+  {
+    "id": "EDGE-06",
+    "retrieved_standards": [
+      "IS 1489 (Part 1): 1991",
+      "IS 1489 (Part 2): 1991",
+      "IS 269: 1989",
+      "IS 4032 (Part 2): 1985",
+      "IS 13757: 1993"
+    ],
+    "latency_seconds": 0.3808,
+    "details": [
+      {
+        "standard_id": "IS 1489 (Part 1): 1991",
+        "title": "(PART1) : 1991 PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.98,
+        "rationale": "IS 1489 (PART1) : 1991 PORTLAND POZZOLANA CEMENT\nPART 1 FLY ASH BASED\n(Third Revision)\n1. Physical Requirements\nchemical requirements of Portland pozzolana cement\nusing only fly ash pozzolana."
+      },
+      {
+        "standard_id": "IS 1489 (Part 2): 1991",
+        "title": "(PART 2) :1991 PORTLAND POZZOLANA CEMENT PART 2 CALCINED CLAY BASED",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.925,
+        "rationale": "IS 1489 (PART 2) :1991 PORTLAND POZZOLANA CEMENT\nPART 2 CALCINED CLAY BASED\n(Third Revision)\n3. Scope \u2014 Manufacture, Physical and Chemical\nrequriements of Portland- pozzolana cement\n4 Physical requirements\nmanufactured by using calcined clay pozzolana or a\nmixture of calcined clay and fly ash pozzolana."
+      },
+      {
+        "standard_id": "IS 269: 1989",
+        "title": "1989\u2021 c) At 672\u00b1 4 h 33 MPa , Min",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.87,
+        "rationale": "5 Delivery Packed in specified bags of 50 kgs or 25,\n\u2020 Fly ash for use as pozzolana and admiscture (first revision). TABLE 1 CHEMICAL REQUIREMENTS OF PORTLAND- POZZOLANA CEMENT\nSI No."
+      },
+      {
+        "standard_id": "IS 4032 (Part 2): 1985",
+        "title": "\u2014 Method of physical tests of hydraulic cement and IS 4032: 1985 Methods of Chemical analysis of hydraulic cement",
+        "category": "Cement",
+        "year": 1985,
+        "confidence": 0.815,
+        "rationale": "IS 4031\u2014 Method of physical tests of hydraulic cement and IS 4032: 1985 Methods of Chemical analysis of hydraulic cement\n(first revision)\nFor detailed information, refer to IS 1489(Part 2):1991 Specification for Portland pozzolana\ncement Part 2 calcined clay based (third revision). 1.13\n\nSP 21 : 2005\nSUMMARY OF"
+      },
+      {
+        "standard_id": "IS 13757: 1993",
+        "title": "BURNT CLAY FLY ASH BUILDING BRICKS",
+        "category": "Bricks",
+        "year": 1993,
+        "confidence": 0.76,
+        "rationale": "IS 13757 : 1993 BURNT CLAY FLY ASH BUILDING BRICKS\n1. For detailed information, refer to IS 13757:1993 Specification for burnt clay fly ash building\nbricks."
+      }
+    ],
+    "expected_standards": [
+      "IS 1489 (Part 1): 1991"
+    ]
+  },
+  {
+    "id": "EDGE-07",
+    "retrieved_standards": [
+      "IS 1489 (Part 2): 1991",
+      "IS 1489 (Part 1): 1991",
+      "IS 4032 (Part 2): 1985",
+      "IS 269: 1989",
+      "IS 10360: 1982"
+    ],
+    "latency_seconds": 0.4123,
+    "details": [
+      {
+        "standard_id": "IS 1489 (Part 2): 1991",
+        "title": "(PART 2) :1991 PORTLAND POZZOLANA CEMENT PART 2 CALCINED CLAY BASED",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.98,
+        "rationale": "IS 1489 (PART 2) :1991 PORTLAND POZZOLANA CEMENT\nPART 2 CALCINED CLAY BASED\n(Third Revision)\n3. Scope \u2014 Manufacture, Physical and Chemical\nrequriements of Portland- pozzolana cement\n4 Physical requirements\nmanufactured by using calcined clay pozzolana or a\nmixture of calcined clay and fly ash pozzolana."
+      },
+      {
+        "standard_id": "IS 1489 (Part 1): 1991",
+        "title": "(PART1) : 1991 PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.925,
+        "rationale": "IS 1489 (PART1) : 1991 PORTLAND POZZOLANA CEMENT\nPART 1 FLY ASH BASED\n(Third Revision)\n1. TABLE 1 CHEMICAL REQUIREMENTS OF PORTLAND POZZOLANA\nCEMENT\nSI No."
+      },
+      {
+        "standard_id": "IS 4032 (Part 2): 1985",
+        "title": "\u2014 Method of physical tests of hydraulic cement and IS 4032: 1985 Methods of Chemical analysis of hydraulic cement",
+        "category": "Cement",
+        "year": 1985,
+        "confidence": 0.87,
+        "rationale": "IS 4031\u2014 Method of physical tests of hydraulic cement and IS 4032: 1985 Methods of Chemical analysis of hydraulic cement\n(first revision)\nFor detailed information, refer to IS 1489(Part 2):1991 Specification for Portland pozzolana\ncement Part 2 calcined clay based (third revision). 1.13\n\nSP 21 : 2005\nSUMMARY OF"
+      },
+      {
+        "standard_id": "IS 269: 1989",
+        "title": "1989\u2021 c) At 672\u00b1 4 h 33 MPa , Min",
+        "category": "Cement",
+        "year": 1989,
+        "confidence": 0.815,
+        "rationale": "IS 269:1989\u2021\nc) At 672\u00b1 4 h 33 MPa , Min\n* Calcined clay pozzolana (second revision). TABLE 1 CHEMICAL REQUIREMENTS OF PORTLAND- POZZOLANA CEMENT\nSI No."
+      },
+      {
+        "standard_id": "IS 10360: 1982",
+        "title": "LIME-POZZOLANA CONCRETE BLOCKS FOR PAVING",
+        "category": "Cement",
+        "year": 1982,
+        "confidence": 0.76,
+        "rationale": "Note 1\u2014 In view of low abrasive resistance of lime pozzolana\nconcrete, the blocks shall be provided with a thin wearing course of 5.4 Abrasion Resistance \u2014 Of top wearing course\ncement sand mortar of 10 mm cast integrally with the lime pozzolana\nsurface (1:3 cement, sand mortar) shall have a\nconcrete. maximum abrasion loss of 0.4 percent\nNote 2 \u2014 O..."
+      }
+    ],
+    "expected_standards": [
+      "IS 1489 (Part 2): 1991"
+    ]
+  },
+  {
+    "id": "EDGE-08",
+    "retrieved_standards": [
+      "IS 459: 1992",
+      "IS 1626 (Part 1): 1994",
+      "IS 1626 (Part 3): 1984",
+      "IS 13008: 1990",
+      "IS 2096: 2096"
+    ],
+    "latency_seconds": 0.4754,
+    "details": [
+      {
+        "standard_id": "IS 459: 1992",
+        "title": "CORRUGATED AND SEMI-CORRUGATED ASBESTOS CEMENT SHEETS",
+        "category": "Cement",
+        "year": 1992,
+        "confidence": 0.98,
+        "rationale": "IS 459 : 1992 CORRUGATED AND SEMI-CORRUGATED ASBESTOS\nCEMENT SHEETS\n(Third Revision)\n1. For detailed informatoin refer to IS 459:1992 Specification for corrugated and semi-corrugated\nasbestos cement sheets (third revision)."
+      },
+      {
+        "standard_id": "IS 1626 (Part 1): 1994",
+        "title": "Asbestos cement building pipes and pipe fittings, gutters and gutter fittings and roofing fittings :",
+        "category": "Cement",
+        "year": 1994,
+        "confidence": 0.925,
+        "rationale": "IS 1626 Asbestos cement building pipes and pipe fittings, gutters and gutter fittings and roofing\nfittings :\n(Part 1) : 1994 Pipe and pipe fittings (second revision) 1.55\n(Part 2) : 1994 Gutter and gutter fittings (second revision) 1.57\n(Part 3) : 1994 Roofing accessories (second revision) 1.58"
+      },
+      {
+        "standard_id": "IS 1626 (Part 3): 1984",
+        "title": "ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS",
+        "category": "Cement",
+        "year": 1984,
+        "confidence": 0.87,
+        "rationale": "Scope \u2014 Requirements of asbestos cement roofing 2. Shapes, Dimensions and Tolerances\nfittings, to be used in conjunction with corrugated and\nsemi-corugated asbestos cement sheets conforming to\n2.1 Shapes\u2014 The shapes of various fittings shall be as"
+      },
+      {
+        "standard_id": "IS 13008: 1990",
+        "title": "SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS",
+        "category": "Cement",
+        "year": 1990,
+        "confidence": 0.815,
+        "rationale": "IS 13008 : 1990 SHALLOW CORRUGATED ASBESTOS\nCEMENT SHEETS\n1. For detailed information, refer to IS 13008:1990 Specification for shallow corrugated asbestos\ncement sheets."
+      },
+      {
+        "standard_id": "IS 2096: 2096",
+        "title": "ASBESTOS CEMENT FLAT SHEETS",
+        "category": "Cement",
+        "year": 2096,
+        "confidence": 0.76,
+        "rationale": "IS 2096 : 1992 ASBESTOS CEMENT FLAT SHEETS\n(First Revision)\n1. For detailed information, refer to IS 2096:1991.Specifiction for asbestos cement sheets\n(first revision)."
+      }
+    ],
+    "expected_standards": [
+      "IS 459: 1992"
+    ]
+  },
+  {
+    "id": "EDGE-09",
+    "retrieved_standards": [
+      "IS 14871: 2000",
+      "IS 10388: 1982",
+      "IS 14862: 2000",
+      "IS 12709: 1994",
+      "IS 14402: 1996"
+    ],
+    "latency_seconds": 0.496,
+    "details": [
+      {
+        "standard_id": "IS 14871: 2000",
+        "title": "Products in fibre reinforced cement\u2013 Long corrugated or asymetrical section sheets and fittings for roofing and cladding 8.27",
+        "category": "Cement",
+        "year": 2000,
+        "confidence": 0.98,
+        "rationale": "IS 14871-2000 Products in fibre reinforced cement\u2013 Long corrugated or asymetrical\nsection sheets and fittings for roofing and cladding 8.27\nBITUNINOUS"
+      },
+      {
+        "standard_id": "IS 10388: 1982",
+        "title": "CORRUGATED COIR, WOODWOOL, CEMENT ROOFING SHEETS",
+        "category": "Cement",
+        "year": 1982,
+        "confidence": 0.925,
+        "rationale": "IS 10388 : 1982 CORRUGATED COIR, WOODWOOL,\nCEMENT ROOFING SHEETS\n1. For detailed information, refer to I S 10388:1982 Specification for corrugated coir, woodwool,\ncement roofing sheets."
+      },
+      {
+        "standard_id": "IS 14862: 2000",
+        "title": "FIBRE CEMENT FLAT SHEETS",
+        "category": "Cement",
+        "year": 2000,
+        "confidence": 0.87,
+        "rationale": "IS 14862 : 2000 FIBRE CEMENT FLAT SHEETS\n1. For detailed information refer to IS 14862 : 2000 Specification for fibre cement flat sheets."
+      },
+      {
+        "standard_id": "IS 12709: 1994",
+        "title": "GLASS FIBRE REINFORCED PLASTICS (GRP) PIPES, JOINTS AND FITTINGS FOR USE FOR",
+        "category": "Cement",
+        "year": 1994,
+        "confidence": 0.815,
+        "rationale": "IS 12709 : 1994 GLASS FIBRE REINFORCED PLASTICS (GRP)\nPIPES, JOINTS AND FITTINGS FOR USE FOR\nPOTABLE WATER SUPPLY\n(First Revision)\n1. 9.1Fittings may be made :\na) from straight pipes\nb) by moulding\nFor detailed information, refer to IS 12709 : 1994 Specification for glass fibre reinforced plastic\n(GRP) pipes, joints and fittings for use for potable..."
+      },
+      {
+        "standard_id": "IS 14402: 1996",
+        "title": "GLASS FIBRE REINFORCED PLASTICS (GRP) PIPES JOINT AND FITTINGS FOR USE FOR SEWERAGE,",
+        "category": "Cement",
+        "year": 1996,
+        "confidence": 0.76,
+        "rationale": "IS 14402 : 1996 GLASS FIBRE REINFORCED PLASTICS (GRP)\nPIPES JOINT AND FITTINGS FOR USE FOR SEWERAGE,\nINDUSTRIAL WASTE AND WATER (OTHER THAN POTABLE)\n1. For detailed information, refer to IS 14402 : 1996 Specification for glass fibre reinforces plastics\n(GRP) pipes, joints and fittings for use for sewerage, industrial waste and water (other than\npot..."
+      }
+    ],
+    "expected_standards": [
+      "IS 14871: 2000"
+    ]
+  },
+  {
+    "id": "EDGE-10",
+    "retrieved_standards": [
+      "IS 9627: 1980",
+      "IS 12987: 1991",
+      "IS 5531: 1988",
+      "IS 1592: 2003",
+      "IS 12988: 1991"
+    ],
+    "latency_seconds": 0.4116,
+    "details": [
+      {
+        "standard_id": "IS 9627: 1980",
+        "title": "ASBESTOS CEMENT PRESSURE PIPES (LIGHT DUTY)",
+        "category": "Cement",
+        "year": 1980,
+        "confidence": 0.98,
+        "rationale": "IS 9627 : 1980 ASBESTOS CEMENT PRESSURE PIPES\n(LIGHT DUTY)\n1. For detailed information, refer to IS 9627:1980 Specification for asbestos cement pressure\npipes (light duty)."
+      },
+      {
+        "standard_id": "IS 12987: 1991",
+        "title": "CAST IRON DETACHABLE JOINTS FOR USE WITH ASBESTOS CEMENT PRESSURE PIPES (LIGHT DUTY)",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.925,
+        "rationale": "IS 12987 : 1991 CAST IRON DETACHABLE JOINTS FOR USE WITH\nASBESTOS CEMENT PRESSURE PIPES (LIGHT DUTY)\n1. *Asbestos cement pressure pipes (light duty)."
+      },
+      {
+        "standard_id": "IS 5531: 1988",
+        "title": "Cast iron specials for asbestos-cement pressure pipes for water, gas and sewage 10.50",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.87,
+        "rationale": "IS 5531 :1988 Cast iron specials for asbestos-cement pressure pipes for water, gas and\nsewage (first revision) 10.50\n10.2\n\nSP 21 : 2005\nTitle Page"
+      },
+      {
+        "standard_id": "IS 1592: 2003",
+        "title": "ASBESTOS CEMENT PRESSURE PIPES",
+        "category": "Cement",
+        "year": 2003,
+        "confidence": 0.815,
+        "rationale": "IS 1592 : 2003 ASBESTOS CEMENT PRESSURE PIPES\n(Fourth Revision)\n1. -\n1.53\n\nSP 21 : 2005\nTABLE 4 CLASIFICATION AND DIMENSIONS OF ASBESTOS CEMENT PRESSURE PIPES\nAll dimensions are in millimitres\nSl."
+      },
+      {
+        "standard_id": "IS 12988: 1991",
+        "title": "Dimensional requirements for rubber sealing rings for CID joints in asbestos cement piping for light duty AC pipes. 10.66",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.76,
+        "rationale": "IS 12988 : 1991 Dimensional requirements for rubber sealing rings for CID joints in\nasbestos cement piping for light duty AC pipes."
+      }
+    ],
+    "expected_standards": [
+      "IS 9627: 1980"
+    ]
+  },
+  {
+    "id": "EDGE-11",
+    "retrieved_standards": [
+      "IS 5531: 1988",
+      "IS 1536: 2001",
+      "IS 1537: 1976",
+      "IS 1538: 1993",
+      "IS 8794: 1988"
+    ],
+    "latency_seconds": 0.4292,
+    "details": [
+      {
+        "standard_id": "IS 5531: 1988",
+        "title": "Cast iron specials for asbestos-cement pressure pipes for water, gas and sewage 10.50",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.98,
+        "rationale": "IS 5531 :1988 Cast iron specials for asbestos-cement pressure pipes for water, gas and\nsewage (first revision) 10.50\n10.2\n\nSP 21 : 2005\nTitle Page"
+      },
+      {
+        "standard_id": "IS 1536: 2001",
+        "title": "CENTRIFUGALLY CAST (SPUN) IRON PRESSURE PIPES FOR WATER, GAS AND SEWAGE",
+        "category": "Steel",
+        "year": 2001,
+        "confidence": 0.925,
+        "rationale": "IS 1536 : 2001 CENTRIFUGALLY CAST (SPUN) IRON PRESSURE\nPIPES FOR WATER, GAS AND SEWAGE\n(Fourth Revision)\n1. For detailed information, refer to IS 1536 : 1989 Specification for centrifugally cast (spun)\niron pressure pipes for water, gas and sewage (third revision)."
+      },
+      {
+        "standard_id": "IS 1537: 1976",
+        "title": "VERTICALLY CAST IRON PRESSURE PIPES FOR WATER, GAS AND SEWAGE",
+        "category": "Steel",
+        "year": 1976,
+        "confidence": 0.87,
+        "rationale": "IS 1537 : 1976 VERTICALLY CAST IRON PRESSURE PIPES\nFOR WATER, GAS AND SEWAGE\n(First Revision)\n1. 1) Up to 300 mm 20 25 20 25\n2) Over 300 and\nup to 600 mm 20 25 15 20\n3) Over 600 and\nup to 1000 mm 15 20 10 15\n4) Over 1000 and\nup to 1500 mm 10 15 10 10\nFor detailed information, refer to IS 1537 : 1976 Specification for vertically cast iron pressure\np..."
+      },
+      {
+        "standard_id": "IS 1538: 1993",
+        "title": "CAST IRON FITTINGS FOR PRESSURE PIPES FOR WATER, GAS AND SEWAGE",
+        "category": "Steel",
+        "year": 1993,
+        "confidence": 0.815,
+        "rationale": "IS 1538 : 1993 CAST IRON FITTINGS FOR PRESSURE PIPES\nFOR WATER, GAS AND SEWAGE\n(Third Revision)\n1. For detailed information, refer to IS 1538 : 1993 Specification for cast Iron Fittings for pressure\npipes for water, gas and sewage (third revision)."
+      },
+      {
+        "standard_id": "IS 8794: 1988",
+        "title": "CAST IRON DETACHABLE JOINTS FOR USE WITH ASBESTOS CEMENT PRESSURE PIPES",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.76,
+        "rationale": "IS 8794 : 1988 CAST IRON DETACHABLE JOINTS FOR USE WITH\nASBESTOS CEMENT PRESSURE PIPES\n(First Revision)\n1. Specification for cast iron detachable joints\nfor use with asbestos cement pressure pipes (first revision)."
+      }
+    ],
+    "expected_standards": [
+      "IS 5531: 1988"
+    ]
+  },
+  {
+    "id": "EDGE-12",
+    "retrieved_standards": [
+      "IS 2185 (Part 3): 1984",
+      "IS 2185 (Part 1): 1979",
+      "IS 2185 (Part 2): 1983",
+      "IS 6072: 1971",
+      "IS 6073: 1971"
+    ],
+    "latency_seconds": 0.4269,
+    "details": [
+      {
+        "standard_id": "IS 2185 (Part 3): 1984",
+        "title": "(PART 3) : 1984 CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED)",
+        "category": "Cement",
+        "year": 1984,
+        "confidence": 0.98,
+        "rationale": "IS 2185 (PART 3) : 1984 CONCRETE MASONRY UNITS\nPART 3 AUTOCLAVED CELLULAR (AERATED)\nCONCRETE BLOCKS\n(First Revision)\n1. For detailed information, refer to IS 2185 (Part 3) 1984 Specification for concrete masonry\nunits: Part 3 Autoclaved cellular (aerated) concrete blocks (first revision)."
+      },
+      {
+        "standard_id": "IS 2185 (Part 1): 1979",
+        "title": "Concrete masonry units: 1.23",
+        "category": "Concrete",
+        "year": 1979,
+        "confidence": 0.925,
+        "rationale": "IS 2185 Concrete masonry units:\n(Part 1) : 1979 Hollow and solid concrete blocks (second revision) 1.23\n(Part 2) : 1983 Hollow and solid lightweight concrete blocks (first revision) 1.25\n(Part 3) : 1984 Autocalved cellular aerated concrete blocks (first revision) 1.27"
+      },
+      {
+        "standard_id": "IS 2185 (Part 2): 1983",
+        "title": "(PART 2) : 1983 CONCRETE MASONRY UNITS PART 2 HOLLOW AND SOLID LIGHTWEIGHT",
+        "category": "Steel",
+        "year": 1983,
+        "confidence": 0.87,
+        "rationale": "IS 2185 (PART 2) : 1983 CONCRETE MASONRY UNITS\nPART 2 HOLLOW AND SOLID LIGHTWEIGHT\nCONCRETE BLOCKS\n(First Revision)\n1. For detailed information, refer to IS 2185 (Part 2) 1983 Specification for concrete masonry\nunits : Part 2 Hollow and solid lightweight concrete blocks (first revision)."
+      },
+      {
+        "standard_id": "IS 6072: 1971",
+        "title": "AUTOCLAVED REINFORCED CELLULAR CONCRETE WALL SLABS",
+        "category": "Cement",
+        "year": 1971,
+        "confidence": 0.815,
+        "rationale": "IS 6072 : 1971 AUTOCLAVED REINFORCED CELLULAR\nCONCRETE WALL SLABS\n1. For detailed information, refer to IS 6072:1971 Specification for autoclaved reinforced cellular\nconcrete wall slabs."
+      },
+      {
+        "standard_id": "IS 6073: 1971",
+        "title": "AUTOCLAVED REINFORCED CELLULAR CONCRETE FLOOR AND ROOF SLABS",
+        "category": "Cement",
+        "year": 1971,
+        "confidence": 0.76,
+        "rationale": "IS 6073 : 1971 AUTOCLAVED REINFORCED CELLULAR\nCONCRETE FLOOR AND ROOF SLABS\n1. For detailed information, refer to IS 6073:1971 Specification for autoclaved reinforced cellular\nconcrete floor and roof slabs."
+      }
+    ],
+    "expected_standards": [
+      "IS 2185 (Part 3): 1984"
+    ]
+  },
+  {
+    "id": "EDGE-13",
+    "retrieved_standards": [
+      "IS 2185 (Part 2): 1983",
+      "IS 2185 (Part 1): 1979",
+      "IS 9142: 1979",
+      "IS 12440: 1988",
+      "IS 2849: 1983"
+    ],
+    "latency_seconds": 0.404,
+    "details": [
+      {
+        "standard_id": "IS 2185 (Part 2): 1983",
+        "title": "(PART 2) : 1983 CONCRETE MASONRY UNITS PART 2 HOLLOW AND SOLID LIGHTWEIGHT",
+        "category": "Steel",
+        "year": 1983,
+        "confidence": 0.98,
+        "rationale": "IS 2185 (PART 2) : 1983 CONCRETE MASONRY UNITS\nPART 2 HOLLOW AND SOLID LIGHTWEIGHT\nCONCRETE BLOCKS\n(First Revision)\n1. For detailed information, refer to IS 2185 (Part 2) 1983 Specification for concrete masonry\nunits : Part 2 Hollow and solid lightweight concrete blocks (first revision)."
+      },
+      {
+        "standard_id": "IS 2185 (Part 1): 1979",
+        "title": "(PART 1) : 1979 CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS",
+        "category": "Concrete",
+        "year": 1979,
+        "confidence": 0.925,
+        "rationale": "IS 2185 (PART 1) : 1979 CONCRETE MASONRY UNITS\nPART 1 HOLLOW AND SOLID CONCRETE BLOCKS\n(Second Revision)\n1. For detailed information, refer to IS 2185 (Part 1):1979 Specification for concrete mansory\nunits : Part 1 Hollow and solid concrete blocks (second revision)."
+      },
+      {
+        "standard_id": "IS 9142: 1979",
+        "title": "ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR CONCRETE MASONRY UNITS",
+        "category": "Cement",
+        "year": 1979,
+        "confidence": 0.87,
+        "rationale": "IS 9142 : 1979 ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR\nCONCRETE MASONRY UNITS\n1. For detailed information, refer to IS 9142:1979 Specification for artificial lightweight aggregates for concrete\nmasonry units."
+      },
+      {
+        "standard_id": "IS 12440: 1988",
+        "title": "PRECAST CONCRETE STONE MASONRY BLOCKS",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.815,
+        "rationale": "IS 12440 : 1988 PRECAST CONCRETE STONE MASONRY BLOCKS\n1. Specification for precast concrete stone masonry\nblocks."
+      },
+      {
+        "standard_id": "IS 2849: 1983",
+        "title": "NON-LOAD BEARING GYPSUM PARTITION BLOCKS (SOLID AND HOLLOW TYPES)",
+        "category": "Steel",
+        "year": 1983,
+        "confidence": 0.76,
+        "rationale": "IS 2849 : 1983 NON-LOAD BEARING GYPSUM PARTITION\nBLOCKS (SOLID AND HOLLOW TYPES)\n(First Revision)\n1. Dimensions other than length, height and breadth for guidance only\nNote \u2014 For the Methods of tests, refer to IS 2542 (Part 2)-1981 Methods of test for Gypsum plaster, concrete and products-\nPart 2 gypsum products (first revision) and IS 3808:1979 Me..."
+      }
+    ],
+    "expected_standards": [
+      "IS 2185 (Part 1): 1979"
+    ]
+  },
+  {
+    "id": "EDGE-14",
+    "retrieved_standards": [
+      "IS 2185 (Part 2): 1983",
+      "IS 2185 (Part 1): 1979",
+      "IS 3115: 1992",
+      "IS 3620: 1979",
+      "IS 12440: 1988"
+    ],
+    "latency_seconds": 0.444,
+    "details": [
+      {
+        "standard_id": "IS 2185 (Part 2): 1983",
+        "title": "(PART 2) : 1983 CONCRETE MASONRY UNITS PART 2 HOLLOW AND SOLID LIGHTWEIGHT",
+        "category": "Steel",
+        "year": 1983,
+        "confidence": 0.98,
+        "rationale": "IS 2185 (PART 2) : 1983 CONCRETE MASONRY UNITS\nPART 2 HOLLOW AND SOLID LIGHTWEIGHT\nCONCRETE BLOCKS\n(First Revision)\n1. For detailed information, refer to IS 2185 (Part 2) 1983 Specification for concrete masonry\nunits : Part 2 Hollow and solid lightweight concrete blocks (first revision)."
+      },
+      {
+        "standard_id": "IS 2185 (Part 1): 1979",
+        "title": "(PART 1) : 1979 CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS",
+        "category": "Concrete",
+        "year": 1979,
+        "confidence": 0.925,
+        "rationale": "IS 2185 (PART 1) : 1979 CONCRETE MASONRY UNITS\nPART 1 HOLLOW AND SOLID CONCRETE BLOCKS\n(Second Revision)\n1. For detailed information, refer to IS 2185 (Part 1):1979 Specification for concrete mansory\nunits : Part 1 Hollow and solid concrete blocks (second revision)."
+      },
+      {
+        "standard_id": "IS 3115: 1992",
+        "title": "LIME BASED BLOCKS",
+        "category": "Concrete",
+        "year": 1992,
+        "confidence": 0.87,
+        "rationale": "Physical Requirements\nand gooved or double grooved. Dimensions\n4.1 Actual Sizes\nLength 390 mm\nWidth 90,190, 290 mm\nHeight 90, 190 mm\nNote \u2014 For methods of test, refer to IS 2185 (Part 1):1979 Concrete masonry units\u2014 Part 1 solid and hollow concrete blocks\n(second revision)."
+      },
+      {
+        "standard_id": "IS 3620: 1979",
+        "title": "LATERITE STONE BLOCK FOR MASONRY",
+        "category": "Bricks",
+        "year": 1979,
+        "confidence": 0.815,
+        "rationale": "Scope \u2014 Requirements for dimensions, physical 3.1 Tolerance \u2014 \u00b1 5 mm on all dimensions. TABLE 1 PHYSICAL PROPERTIES\n2."
+      },
+      {
+        "standard_id": "IS 12440: 1988",
+        "title": "PRECAST CONCRETE STONE MASONRY BLOCKS",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.76,
+        "rationale": "IS 12440 : 1988 PRECAST CONCRETE STONE MASONRY BLOCKS\n1. Specification for precast concrete stone masonry\nblocks."
+      }
+    ],
+    "expected_standards": [
+      "IS 2185 (Part 2): 1983"
+    ]
+  },
+  {
+    "id": "EDGE-15",
+    "retrieved_standards": [
+      "IS 1786: 1985",
+      "IS 2090: 2090",
+      "IS 432 (Part 1): 1982",
+      "IS 432 (Part 2): 1982",
+      "IS 13620: 1993"
+    ],
+    "latency_seconds": 0.4662,
+    "details": [
+      {
+        "standard_id": "IS 1786: 1985",
+        "title": "PLAIN HIGH STRENGTH DEFORMED STEEL BARS AND WIRES FOR CONCRETE REINFORCEMENT",
+        "category": "Cement",
+        "year": 1985,
+        "confidence": 0.98,
+        "rationale": "IS 1786 : 1985 PLAIN HIGH STRENGTH DEFORMED STEEL BARS\nAND WIRES FOR CONCRETE REINFORCEMENT\n(Third Revision)\n1. For detailed information, refer to IS 1786 :1985 Specification for high strength deformed steel bars and wires\nfor concrete reinforcement (third revision)."
+      },
+      {
+        "standard_id": "IS 2090: 2090",
+        "title": "HIGH TENSILE STEEL BARS USED IN PRESTRESSED CONCRETE",
+        "category": "Steel",
+        "year": 2090,
+        "confidence": 0.925,
+        "rationale": "IS 2090 : 1983 HIGH TENSILE STEEL BARS USED IN\nPRESTRESSED CONCRETE\n(First Revision)\n1. Scope \u2013 Requirements for high tensile steel bars 5."
+      },
+      {
+        "standard_id": "IS 432 (Part 1): 1982",
+        "title": "Mild steel and medium tensile steel bars and hard drawn steel wire for concrete reinforcement",
+        "category": "Cement",
+        "year": 1982,
+        "confidence": 0.87,
+        "rationale": "IS 432 Mild steel and medium tensile steel bars and hard drawn steel wire\nfor concrete reinforcement\n(Part 1): 1982 Mild steel and medium tensile steel bars (third revision) 14.4\n(Part 2) : 1982 Hard \u2013 drawn steel wire (third revision) 14.6"
+      },
+      {
+        "standard_id": "IS 432 (Part 2): 1982",
+        "title": "(PARTII) : 1982 MILD STEEL AND MEDIUM TENSILE STEEL BARS AND HARD-DRAWN STEEL WIRE FOR CONCRETE",
+        "category": "Cement",
+        "year": 1982,
+        "confidence": 0.815,
+        "rationale": "IS 432 (PARTII) : 1982 MILD STEEL AND MEDIUM TENSILE STEEL\nBARS AND HARD-DRAWN STEEL WIRE FOR CONCRETE\nREINFORCEMENT\nPART 2 HARD-DRAWN STEEL WIRE\n(Third Revision)\n1. Physical Requirements\nmedium strength used as reinforcement in concrete."
+      },
+      {
+        "standard_id": "IS 13620: 1993",
+        "title": "FUSION BONDED EPOXY COATED REINFORCING BARS",
+        "category": "Steel",
+        "year": 1993,
+        "confidence": 0.76,
+        "rationale": "Scope \u2013 Covers deformed steel reinforcing bars 5. Reinforcing Steel 6.1 Coating Thickness \u2013 For acceptance purposes at\nleast 90 percent of all coating thickness measurement\nSteel reinforcing bars to be coated shall conform to\nshall be 0.1 mm to 0.3 mm after curing."
+      }
+    ],
+    "expected_standards": [
+      "IS 1786: 1985"
+    ]
+  },
+  {
+    "id": "EDGE-16",
+    "retrieved_standards": [
+      "IS 6909: 1990",
+      "IS 12330: 1988",
+      "IS 12118 (Part 1): 1987",
+      "IS 14182: 1994",
+      "IS 8043: 1991"
+    ],
+    "latency_seconds": 0.4552,
+    "details": [
+      {
+        "standard_id": "IS 6909: 1990",
+        "title": "SUPERSULPHATED CEMENT",
+        "category": "Cement",
+        "year": 1990,
+        "confidence": 0.98,
+        "rationale": "IS 6909 : 1990 SUPERSULPHATED CEMENT\n(First Revision)\n1. Application \u2014Supersulphated cement has been\nsuccessfully used in a variety of aggressive conditions,\nfor example, for marine works, mass concrete jobs to 4.1 Fineness \u2014 It shall have a fineness (specific\nresist the attack by aggressive water, reinforced concrete surface) of not less than 400 ..."
+      },
+      {
+        "standard_id": "IS 12330: 1988",
+        "title": "SULPHATE RESISTING PORTLAND CEMENT",
+        "category": "Cement",
+        "year": 1988,
+        "confidence": 0.925,
+        "rationale": "This cement should than 10 mm by \u2018Le Chatelier\u2019 method and not more than\nnot be mistaken for supersulphated cement, which is produced\n0.8 percent by autoclave method. Use of\nsupersulphated cement is, however generally restricted\na) 72 \u00b11h, not less than 10 MPa\nwhere the prevailing tempera ture ie below 40OC."
+      },
+      {
+        "standard_id": "IS 12118 (Part 1): 1987",
+        "title": "Two part polysulphide-based sealant 1.81 (Part 1):1987 General requirements",
+        "category": "Cement",
+        "year": 1987,
+        "confidence": 0.87,
+        "rationale": "IS 12118 Two part polysulphide-based sealant 1.81\n(Part 1):1987 General requirements\nNote \u2014 IS 2645:2003 Integral cement water proofing compounds is covered under \u201cwater proofing\u201d and\ndamp-proofing materials (see section 9)\n1.4\n\nSP 21 : 2005\nSUMMARY OF"
+      },
+      {
+        "standard_id": "IS 14182: 1994",
+        "title": "SOLVENT CEMENT FOR USE WITH UNPLASTICIZED POLYVINYL CHLORIDE PLASTIC PIPE AND FITTINGS",
+        "category": "Cement",
+        "year": 1994,
+        "confidence": 0.815,
+        "rationale": "unplasticized polyvinyl chloride pipe and fittings\n2.4 The cement shall show no gelation. It shall show\nintended for use in carrying potable water."
+      },
+      {
+        "standard_id": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT 1 Scope \u2014 Manufacture and chemical and physical 3. Physical Requirements",
+        "category": "Cement",
+        "year": 1991,
+        "confidence": 0.76,
+        "rationale": "properties are due to the formation of a water repellant film\naround each particle of cement. Hydrophobic cement shall not be confused with water a) 72\u00b1 1 hours Not less than 15.69 MPa\nproofing cements."
+      }
+    ],
+    "expected_standards": [
+      "IS 6909: 1990"
+    ]
+  }
+]

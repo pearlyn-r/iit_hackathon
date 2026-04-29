@@ -1,0 +1,31 @@
+# ── BIS Standards RAG — Runtime Dependencies ─────────────────────────────────
+# Matches your original pip-requirements.txt, trimmed for inference-only use.
+# torch is installed separately in Dockerfile with the CPU-only wheel.
+
+# ── Web server ────────────────────────────────────────────────────────────────
+flask==3.0.3
+flask-cors==4.0.1
+
+# ── PDF Parsing ───────────────────────────────────────────────────────────────
+# Needed even at inference time because retriever.py imports these.
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0
+
+
+# ── Embeddings + Vector Search ────────────────────────────────────────────────
+sentence-transformers>=2.6.0
+faiss-cpu>=1.7.4
+
+# ── Sparse Retrieval ──────────────────────────────────────────────────────────
+rank-bm25>=0.2.2
+
+# ── Numeric + Utils ───────────────────────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.11.0
+tqdm>=4.66.0
+
+# ── NOT included ─────────────────────────────────────────────────────────────
+# camelot-py[cv]   - index build only, needs ghostscript + OpenCV
+# llama-cpp-python - USE_LLM=False in inference.py, not needed
+# accelerate       - only for HF generate() with device_map
+# torch            - handled in Dockerfile with CPU-only wheel (saves ~1GB)
