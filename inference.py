@@ -26,38 +26,88 @@ Output JSON format (STRICT -- judges score on retrieved_standards list):
     ]
 """
 
-# ── path fix: must be at the very top, before any src imports ──────────────
+#    path fix: must be at the very top, before any src imports               
 import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-# ───────────────────────────────────────────────────────────────────────────
+#                                                                            
 
 import argparse
 import json
 import logging
 import re
+import shutil
 import time
 from pathlib import Path
 
+from huggingface_hub import hf_hub_download
+
 from src.retriever import BISRetriever
 from src.generator import generate_rationales
+from src.compliance import build_extractive_rationale, generate_compliance_checklist
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-# ── Configuration ──────────────────────────────────────────────────────────
-INDEX_DIR        = "data/index"
+#    Configuration                                                           
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_INDEX_DIR = os.path.join(ROOT_DIR, "data", "index")
+TMP_INDEX_DIR = "/tmp/index"
+INDEX_DIR = (
+    os.environ.get("BIS_INDEX_DIR")
+    or (DATA_INDEX_DIR if os.path.exists(os.path.join(DATA_INDEX_DIR, "faiss.index")) else TMP_INDEX_DIR)
+)
+#HF_DATASET_REPO_ID = os.environ.get("HF_DATASET_REPO_ID", "pearlyn/bis_compliance")
+#HF_TOKEN = os.environ.get("HF_TOKEN")
+INDEX_FILES = [
+    "faiss.index",
+    "bm25.pkl",
+    "chunks.pkl",
+    "idf.pkl",
+    "whitelist.pkl",
+    "config.json",
+]
 TOP_K_RETRIEVE   = 8      # retrieve more candidates so dedup still gives 5 unique
 USE_LLM          = False
 LLM_MODEL_PATH   = None
-# ──────────────────────────────────────────────────────────────────────────
+#                                                                           
 
 _retriever = None
+
+
+def _ensure_index_files(index_dir: str = INDEX_DIR) -> str:
+    """Ensure FAISS/BM25 index artifacts are present locally.
+
+    On Hugging Face Spaces the repo should define a secret named HF_TOKEN.
+    The artifacts are downloaded from HF_DATASET_REPO_ID as repo_type='dataset'.
+    """
+    os.makedirs(index_dir, exist_ok=True)
+    missing = [name for name in INDEX_FILES if not os.path.exists(os.path.join(index_dir, name))]
+    if not missing:
+        logger.info("Using BIS index artifacts from %s", index_dir)
+        return index_dir
+
+    logger.info(
+        "Missing %s index artifact(s) in %s; downloading from dataset %s",
+        len(missing),
+        index_dir,
+        HF_DATASET_REPO_ID,
+    )
+    for filename in missing:
+        downloaded = hf_hub_download(
+            repo_id=HF_DATASET_REPO_ID,
+            filename=filename,
+            repo_type="dataset",
+            token=HF_TOKEN,
+        )
+        shutil.copyfile(downloaded, os.path.join(index_dir, filename))
+        logger.info("Downloaded %s", filename)
+    return index_dir
 
 def _get_retriever():
     global _retriever
     if _retriever is None:
-        _retriever = BISRetriever(INDEX_DIR)
+        _retriever = BISRetriever(_ensure_index_files())
     return _retriever
 
 
@@ -108,9 +158,9 @@ def _deduplicate(items: list) -> list:
 
 def _compute_confidence(rank: int, rrf_score: float, n_results: int) -> float:
     """
-    Convert retrieval rank + RRF score into a 0–1 confidence value.
+    Convert retrieval rank + RRF score into a 0-1 confidence value.
     Formula: decay by rank position, clipped to [0.50, 0.99].
-    Rank 1 → ~0.95+, Rank 5 → ~0.70.
+    Rank 1 -> ~0.95+, Rank 5 -> ~0.70.
     """
     base  = 0.98 - (rank * 0.055)          # linear decay per rank
     noise = min(rrf_score * 0.15, 0.04)    # small bonus for very high RRF score
@@ -121,10 +171,10 @@ def process_query(query: str) -> dict:
     retriever = _get_retriever()
     t0 = time.time()
 
-    # ── 1. Retrieve (fetch extra so dedup still yields 5 unique) ──────────
+    #    1. Retrieve (fetch extra so dedup still yields 5 unique)           
     chunks = retriever.retrieve(query, top_k=TOP_K_RETRIEVE)
 
-    # ── 2. Deduplicate chunks by standard_id before generation ────────────
+    #    2. Deduplicate chunks by standard_id before generation             
     seen_ids  = set()
     dedup_chunks = []
     for chunk in chunks:
@@ -142,28 +192,32 @@ def process_query(query: str) -> dict:
         if len(dedup_chunks) >= 5:
             break
 
-    # ── 3. Generate rationales ────────────────────────────────────────────
+    #    3. Generate rationales                                             
     results = generate_rationales(query, dedup_chunks, use_llm=USE_LLM, model_path=LLM_MODEL_PATH)
     results = _deduplicate(results)   # second safety pass
 
-    # ── 4. Build detail records with confidence scores ────────────────────
+    #    4. Build detail records with confidence scores                     
     details = []
     for rank, item in enumerate(results[:5]):
         rrf_score = item.get("score", 0.0)
         confidence = _compute_confidence(rank, rrf_score, len(results))
+        rationale_details = build_extractive_rationale(query, item)
         details.append({
             "standard_id": item["standard_id"],
             "title":        item.get("title", "").strip(),
             "category":     item.get("category", ""),
             "year":         item.get("year"),
             "confidence":   confidence,
-            "rationale":    item.get("rationale", ""),
+            "rationale":    rationale_details["summary"] or item.get("rationale", ""),
+            "rationale_details": rationale_details,
+            "explainability": item.get("_explainability", {}),
+            "compliance_checklist": generate_compliance_checklist(item),
         })
 
-    # ── 5. Plain list of IDs for the mandatory scored field ───────────────
+    #    5. Plain list of IDs for the mandatory scored field                
     retrieved_standards = [d["standard_id"] for d in details]
 
-    # ── 6. Pad to 3 minimum if retriever came up short ────────────────────
+    #    6. Pad to 3 minimum if retriever came up short                     
     if len(retrieved_standards) < 3:
         for chunk in chunks:
             for sid in chunk.get("all_standard_ids", []):
@@ -171,6 +225,8 @@ def process_query(query: str) -> dict:
                 retrieved_keys = {_dedup_standard_id(x) for x in retrieved_standards}
                 sid_key = _dedup_standard_id(sid)
                 if sid_key not in retrieved_keys and sid_bare in retriever._bare_whitelist:
+                    fallback_item = {**chunk, "standard_id": sid}
+                    rationale_details = build_extractive_rationale(query, fallback_item)
                     retrieved_standards.append(sid)
                     details.append({
                         "standard_id": sid,
@@ -178,7 +234,10 @@ def process_query(query: str) -> dict:
                         "category":    chunk.get("category", ""),
                         "year":        chunk.get("year"),
                         "confidence":  0.50,
-                        "rationale":   "Supplementary match from same document section.",
+                        "rationale":   rationale_details["summary"] or "Supplementary match from same document section.",
+                        "rationale_details": rationale_details,
+                        "explainability": chunk.get("_explainability", {}),
+                        "compliance_checklist": generate_compliance_checklist(fallback_item),
                     })
                 if len(retrieved_standards) >= 5:
                     break
@@ -186,7 +245,7 @@ def process_query(query: str) -> dict:
                 break
 
     return {
-        "query":               query,                          # ← ADDED: echo query so API and CLI output both include it
+        "query":               query,                          # <- ADDED: echo query so API and CLI output both include it
         "retrieved_standards": retrieved_standards[:5],
         "latency_seconds":     round(time.time() - t0, 4),
         "details":             details[:5],
@@ -210,7 +269,7 @@ def run_inference(input_path: str, output_path: str):
 
         if not query:
             logger.warning(f"Empty query id={qid}")
-            row = {"id": qid, "query": query, "retrieved_standards": [], "latency_seconds": 0.0, "details": []}  # ← ADDED: "query" key in empty-query fallback row
+            row = {"id": qid, "query": query, "retrieved_standards": [], "latency_seconds": 0.0, "details": []}  # <- ADDED: "query" key in empty-query fallback row
             if "expected_standards" in item:
                 row["expected_standards"] = item["expected_standards"]
             output.append(row)
@@ -218,7 +277,7 @@ def run_inference(input_path: str, output_path: str):
 
         try:
             result = process_query(query)  # result now contains "query" automatically
-            row = {"id": qid, **result}    # "query" flows through via **result — no extra change needed here
+            row = {"id": qid, **result}    # "query" flows through via **result  -  no extra change needed here
             if "expected_standards" in item:
                 row["expected_standards"] = item["expected_standards"]
             output.append(row)
@@ -230,7 +289,7 @@ def run_inference(input_path: str, output_path: str):
             )
         except Exception as e:
             logger.error(f"Error on id={qid}: {e}", exc_info=True)
-            row = {"id": qid, "query": query, "retrieved_standards": [], "latency_seconds": 0.0, "details": []}  # ← ADDED: "query" key in error fallback row
+            row = {"id": qid, "query": query, "retrieved_standards": [], "latency_seconds": 0.0, "details": []}  # <- ADDED: "query" key in error fallback row
             if "expected_standards" in item:
                 row["expected_standards"] = item["expected_standards"]
             output.append(row)

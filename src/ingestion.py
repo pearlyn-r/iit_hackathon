@@ -9,6 +9,10 @@ import logging
 from pathlib import Path
 from typing import List, Dict, Optional
 import pdfplumber
+try:
+    from src.compliance import extract_summary_sections
+except ImportError:
+    from compliance import extract_summary_sections
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -19,7 +23,7 @@ STANDARD_ID_PATTERN = re.compile(
     re.IGNORECASE
 )
 
-# Normalize IS codes → "IS XXXX" canonical form
+# Normalize IS codes -> "IS XXXX" canonical form
 def normalize_standard_id(raw: str) -> str:
     digits = re.search(r'\d{2,6}', raw)
     if digits:
@@ -183,7 +187,7 @@ def _extract_title(text: str) -> str:
     BIS SP 21 format:
       IS 269 : 1989 ORDINARY PORTLAND CEMENT          <- IS code + title on one line
       (Fourth Revision)                               <- revision marker (skip)
-      1. Scope — ...                                  <- stop here
+      1. Scope  -  ...                                  <- stop here
 
     Or wrapped:
       IS 459 : 1992 CORRUGATED AND SEMI-CORRUGATED ASBESTOS
@@ -274,11 +278,12 @@ def extract_metadata(block: Dict) -> Dict:
     block["year"] = year
     block["category"] = category
     block["keywords"] = keywords
+    block["summary_sections"] = extract_summary_sections(text)
     return block
 
 
 def build_chunks(pdf_path: str, output_path: str) -> List[Dict]:
-    """Full ingestion pipeline: PDF → structured chunks saved to JSON."""
+    """Full ingestion pipeline: PDF -> structured chunks saved to JSON."""
     pages = extract_pages(pdf_path)
     blocks = split_into_standard_blocks(pages)
     
